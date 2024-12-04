@@ -7,7 +7,7 @@ import { navLinks } from '@/constants'
 function Navbar() {
 	const pathName = usePathname()
 
-	const currentPath = pathName.split('/')[1] || ''
+	const currentPath = pathName.split('/')[2] || ''
 	const isRouteValid = navLinks.some(item => item.route === currentPath)
 
 	if (!isRouteValid) return null
