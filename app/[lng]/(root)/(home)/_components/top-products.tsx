@@ -24,10 +24,40 @@ const TopProducts = () => {
 			price: '230 000 UZS',
 			img: 'https://picsum.photos/200/300',
 		},
+		{
+			id: 4,
+			title: 'ESDY futbolka',
+			price: '230 000 UZS',
+			img: 'https://picsum.photos/200/300',
+		},
+		{
+			id: 5,
+			title: 'ESDY futbolka',
+			price: '230 000 UZS',
+			img: 'https://picsum.photos/200/300',
+		},
+		{
+			id: 6,
+			title: 'ESDY futbolka',
+			price: '230 000 UZS',
+			img: 'https://picsum.photos/200/300',
+		},
+		{
+			id: 7,
+			title: 'ESDY futbolka',
+			price: '230 000 UZS',
+			img: 'https://picsum.photos/200/300',
+		},
+		{
+			id: 8,
+			title: 'ESDY futbolka',
+			price: '230 000 UZS',
+			img: 'https://picsum.photos/200/300',
+		},
 	]
 
 	return (
-		<div className='w-full max-w-5xl mx-auto h-auto'>
+		<div className='w-full max-w-7xl mx-auto h-auto'>
 			<Swiper
 				spaceBetween={0}
 				breakpoints={{
@@ -35,6 +65,8 @@ const TopProducts = () => {
 					320: { slidesPerView: 2 },
 					768: { slidesPerView: 2 },
 					1024: { slidesPerView: 3 },
+					1280: { slidesPerView: 4 },
+					1440: { slidesPerView: 5 },
 				}}
 				pagination={{ clickable: true }}
 				modules={[Pagination]}

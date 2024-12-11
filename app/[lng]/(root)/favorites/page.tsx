@@ -92,19 +92,15 @@ export default async function Favorites(props: LngParams) {
 	const {} = props
 
 	return (
-		<section>
-			<div className='container mx-auto px-2.5'>
-				<div className='pt-[16px] pb-[70px]'>
-					<h1 className='text-2xl font-medium mb-[25px]'>
-						Saralangan mahsulotlar
-					</h1>
-					<ul className='grid grid-cols-2 gap-2'>
-						{Cards.map((card: ICard) => (
-							<Card key={card.id} />
-						))}
-					</ul>
-				</div>
-			</div>
-		</section>
+		<div className='flex flex-col gap-3 max-w-7xl w-full m-auto mt-10 sm:px-0 px-4'>
+			<h1 className='sm:text-2xl text-xl font-semibold'>
+				Saralangan mahsulotlar
+			</h1>
+			<ul className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mt-5'>
+				{Cards.map((card: ICard) => (
+					<Card key={card.id} />
+				))}
+			</ul>
+		</div>
 	)
 }

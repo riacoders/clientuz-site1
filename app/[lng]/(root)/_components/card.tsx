@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { formatNumberWithSpaces } from '@/lib/utils'
 import { Heart, ShoppingCart } from 'lucide-react'
+import Link from 'next/link'
 
 function Card() {
 	return (
@@ -27,7 +28,12 @@ function Card() {
 				<div className='text-[12px]  text-[#1E1E1E] mb-[15px]'>
 					{formatNumberWithSpaces(230000)} UZS
 				</div>
-				<button className='btn-i-primary text-[12px] w-full '>Batafsil</button>
+				<Link
+					href={'/uz/products/1'}
+					className='btn-i-primary text-[12px] w-full '
+				>
+					Batafsil
+				</Link>
 				<button className='btn-i-none text-[12px] flex items-center gap-2 w-full p-0 mt-2'>
 					<ShoppingCart size={16} />
 					Savatga qo'shish

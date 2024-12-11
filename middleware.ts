@@ -19,7 +19,10 @@ export function middleware(req: NextRequest) {
 		'/:lng/search',
 		'/:lng/favorites',
 		'/:lng/pay',
+		'/:lng/pay/success',
+		'/:lng/info',
 		'/:lng/products',
+		'/:lng/products/:slug',
 	]
 
 	const isPublic = publicRoutes.some(route => {

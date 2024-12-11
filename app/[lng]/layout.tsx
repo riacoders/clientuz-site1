@@ -6,6 +6,7 @@ import './globals.css'
 import { languages } from '@/i18n/settings'
 import { dir } from 'i18next'
 import Logo from './(root)/_components/logo'
+import MobileNavbar from './(root)/_components/mobile-navbar'
 import Navbar from './(root)/_components/navbar'
 
 const mailSans = localFont({
@@ -40,9 +41,10 @@ export default function RootLayout({ children, params: { lng } }: Props) {
 				suppressHydrationWarning
 			>
 				<Logo />
+				<Navbar />
 				<Toaster />
 				<div className='relative mb-16'>{children}</div>
-				<Navbar />
+				<MobileNavbar />
 			</body>
 		</html>
 	)

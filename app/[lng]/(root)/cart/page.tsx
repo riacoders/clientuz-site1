@@ -59,9 +59,14 @@ export default function Cart() {
 		<section>
 			<div className='container mx-auto px-2.5'>
 				<div className='pt-[16px] pb-[70px]'>
-					<h1 className='text-2xl font-medium mb-[25px]'>
-						Savatchadagi mahsulotlar
-					</h1>
+					<div className='flex items-center justify-between'>
+						<h1 className='sm:text-2xl text-xl font-medium mb-[25px]'>
+							Savatchadagi mahsulotlar
+						</h1>
+						<button className='btn-i-primary sm:flex hidden'>
+							Davom etish
+						</button>
+					</div>
 					<ul>
 						{products.map(product => (
 							<li
@@ -126,6 +131,9 @@ export default function Cart() {
 					<span className='flex items-center justify-end mt-2 font-medium'>
 						<h4>Jami: {formatNumberWithSpaces(calculateTotal())} UZS</h4>
 					</span>
+					<button className='btn-i-primary sm:hidden flex mt-5 w-full'>
+						Davom etish
+					</button>
 				</div>
 			</div>
 		</section>
